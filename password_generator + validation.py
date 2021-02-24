@@ -1,18 +1,15 @@
 # Welcome to Vandyck's Repository.
 # This code is a basic code for random password generator.
 
-# install random module in your terminal
-# use this command: pip install random
+# if your python does not have these modules, install in your terminal
+# use this command: pip install random, pip install string
 
-# After installed, use the random module by import
-import random
+# After installed, utilize the modules
+import random as rd
+import string as st
 
 # set password characters option
-capital_letters = "QWERTYUIOPASDFGHJKLZXCVBNM"
-small_letters = "qwertyuiopasdfghjklzxcvbnm"
-numbers = "1234567890"
-symbols = "!@#$%^&*()-_+={[}]|:;'<,>.?/"
-password_characters = capital_letters + small_letters + numbers + symbols
+password_characters = st.ascii_lowercase + st.ascii_uppercase + st.digits + st.punctuation
 
 # password option and length defining
 password_1 = ""
