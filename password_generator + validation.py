@@ -19,12 +19,12 @@ password_length = input("Length of password:")
 # generating password randomly based on length that users request for
 a = 0
 while a < int(password_length):
-    password_1 = password_1 + random.choice(password_characters)
+    password_1 = password_1 + rd.choice(password_characters)
     a = a + 1
 
 a = 0
 while a < int(password_length):
-    password_2 = password_2 + random.choice(password_characters)
+    password_2 = password_2 + rd.choice(password_characters)
     a = a + 1
 
 print("\nThis is your password options, choose your password\n" + "1. " + password_1 + "\n2. " + password_2)
