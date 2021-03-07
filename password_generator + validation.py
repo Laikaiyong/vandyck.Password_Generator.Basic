@@ -20,12 +20,12 @@ password_length = input("Length of password:")
 a = 0
 while a < int(password_length):
     password_1 = password_1 + rd.choice(password_characters)
-    a = a + 1
+    a += 1
 
 a = 0
 while a < int(password_length):
     password_2 = password_2 + rd.choice(password_characters)
-    a = a + 1
+    a += 1
 
 print("\nThis is your password options, choose your password\n" + "1. " + password_1 + "\n2. " + password_2)
 # giving options to users to choose the password they want based on their preference from the 2 options generated
